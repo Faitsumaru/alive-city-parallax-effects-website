@@ -7,7 +7,6 @@
   box-sizing: border-box;
   list-style: none;
   scroll-behavior: smooth;
-  text-decoration: none;
 }
 
 :root {
@@ -17,12 +16,17 @@
 
 body {
   font-family: "Ojuju", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   font-style: normal;
   background: var(--bgColor);
   color: #fff;
   overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
 }
 
 ::-webkit-scrollbar {
@@ -68,7 +72,7 @@ header {
   color: #fff;
   font-weight: 700;
   font-size: 1rem;
-  padding: 5px 12px 8px 12px;
+  padding: 5px 12px;
   border: 2px solid var(--textColor);
   border-radius: 25px;
   transition: all 0.4s ease;
@@ -94,6 +98,8 @@ section {
   position: absolute;
   object-fit: cover;
   pointer-events: none;
+  height: 100vh;
+  width: 100%;
 }
 .parallax-home img#moon {
   mix-blend-mode: screen;
@@ -104,4 +110,49 @@ section {
   text-shadow: 10px 6px 3px rgba(0, 0, 0, 0.85);
   top: 80%;
   left: 5%;
+}
+
+.about {
+  position: relative;
+}
+.about__info {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 50%;
+  z-index: 1003;
+  background-color: var(--bgColor);
+}
+.about__info-title {
+  font-size: 2.5rem;
+}
+.about__info-text {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.about__info-btn {
+  background-color: var(--textColor);
+  color: var(--bgColor);
+  border-radius: 25px;
+  padding: 0.3rem 1rem;
+  transition: all 0.4s ease;
+  border: 2px solid var(--textColor);
+  font-weight: 700;
+}
+.about__info-btn:hover {
+  box-shadow: 0 0 1rem var(--textColor);
+  color: var(--textColor);
+  background-color: var(--bgColor);
+}
+.about img {
+  position: absolute;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 1000;
+  height: 100vh;
+  width: 100%;
+}
+.about img#waterfall {
+  position: absolute;
+  top: -95px;
 }
