@@ -34,7 +34,7 @@ body {
   background-color: #67ccff;
 }
 
-::-webkit-slider-thumb {
+::-webkit-scrollbar-thumb {
   background-color: #194eb9;
   border-radius: 5rem;
 }
@@ -52,7 +52,7 @@ header {
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--textColor);
   font-weight: 800;
 }
@@ -69,6 +69,7 @@ header {
   font-weight: 700;
   font-size: 1rem;
   padding: 5px 12px 8px 12px;
+  border: 2px solid var(--textColor);
   border-radius: 25px;
   transition: all 0.4s ease;
 }
@@ -76,4 +77,31 @@ header {
   box-shadow: 0 0 1rem var(--textColor);
   background-color: var(--textColor);
   color: var(--bgColor);
+}
+
+section {
+  min-height: 100vh;
+}
+
+.parallax-home {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.parallax-home img {
+  position: absolute;
+  object-fit: cover;
+  pointer-events: none;
+}
+.parallax-home img#moon {
+  mix-blend-mode: screen;
+}
+.parallax-home__title {
+  position: absolute;
+  font-size: 3rem;
+  text-shadow: 10px 6px 3px rgba(0, 0, 0, 0.85);
+  top: 80%;
+  left: 5%;
 }
