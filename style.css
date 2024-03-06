@@ -43,6 +43,21 @@ a {
   border-radius: 5rem;
 }
 
+.btn {
+  background-color: var(--textColor);
+  color: var(--bgColor);
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s ease;
+  border: 2px solid var(--textColor);
+  font-weight: 700;
+}
+.btn:hover {
+  box-shadow: 0 0 1rem var(--textColor);
+  color: var(--textColor);
+  background-color: var(--bgColor);
+}
+
 header {
   padding: 25px 10%;
   position: absolute;
@@ -130,20 +145,6 @@ section {
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
 }
-.about__info-btn {
-  background-color: var(--textColor);
-  color: var(--bgColor);
-  border-radius: 25px;
-  padding: 0.3rem 1rem;
-  transition: all 0.4s ease;
-  border: 2px solid var(--textColor);
-  font-weight: 700;
-}
-.about__info-btn:hover {
-  box-shadow: 0 0 1rem var(--textColor);
-  color: var(--textColor);
-  background-color: var(--bgColor);
-}
 .about img {
   position: absolute;
   object-fit: cover;
@@ -155,4 +156,73 @@ section {
 .about img#waterfall {
   position: absolute;
   top: -95px;
+}
+
+.products {
+  background-color: #121137;
+  padding: 3rem 10%;
+  position: relative;
+}
+.products__title {
+  font-size: 2.5rem;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.products__cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.products__cards-item {
+  padding: 1rem;
+  border: 2px solid var(--textColor);
+  text-align: center;
+  border-radius: 25px;
+  display: block;
+  transition: all 0.4s ease;
+  z-index: 999;
+}
+.products__cards-item:hover {
+  transform: translateY(-7px);
+  cursor: pointer;
+}
+.products__cards-item img {
+  width: 150px;
+  height: 150px;
+  margin-top: -4rem;
+  filter: drop-shadow(0 0 0.5rem var(--textColor));
+}
+.products__info {
+  padding-bottom: 0.5rem;
+}
+.products__info-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.products__info p {
+  padding: 1rem 0 1.5rem 0;
+}
+.products__info span {
+  color: #04cf37;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.products__info-btn {
+  display: block;
+  width: 60%;
+  margin: auto;
+}
+.products .blur-layer {
+  height: 150px;
+  width: 100vw;
+  background: linear-gradient(to bottom, rgba(52, 48, 155, 0.737), #121137);
+  z-index: 1005;
+  position: absolute;
+  top: -7%;
+  left: 0;
+  filter: blur(30px);
 }
