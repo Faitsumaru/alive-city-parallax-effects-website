@@ -73,6 +73,7 @@ header {
     font-size: 2.5rem;
     color: var(--textColor);
     font-weight: 800;
+    letter-spacing: .2rem;
 }
 
 .navlist {
@@ -170,6 +171,7 @@ section {
     background-color: #121137;
     padding: 3rem 10%;
     position: relative;
+    min-height: 65vh;
 
     &__title {
         font-size: 2.5rem;
@@ -244,4 +246,34 @@ section {
         left: 0;
         filter: blur(30px);
     }
+}
+
+.footer {
+    min-height: 20vh;
+    padding: 2rem 6rem;
+    background: linear-gradient(to bottom, #121137, var(--bgColor), var(--bgColor), var(--bgColor));
+
+    .logo {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    
+    &__socials {
+        display: flex;
+        justify-content: end;
+        gap: 1.75rem;
+
+        &-item {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    &__copy {
+        margin-top: 2rem;
+        text-align: center;
+        letter-spacing: .2rem;
+        color: rgba(#67ccff, .45);
+    }
+
 }

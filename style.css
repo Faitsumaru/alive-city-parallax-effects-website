@@ -74,6 +74,7 @@ header {
   font-size: 2.5rem;
   color: var(--textColor);
   font-weight: 800;
+  letter-spacing: 0.2rem;
 }
 
 .navlist {
@@ -162,6 +163,7 @@ section {
   background-color: #121137;
   padding: 3rem 10%;
   position: relative;
+  min-height: 65vh;
 }
 .products__title {
   font-size: 2.5rem;
@@ -225,4 +227,29 @@ section {
   top: -7%;
   left: 0;
   filter: blur(30px);
+}
+
+.footer {
+  min-height: 20vh;
+  padding: 2rem 6rem;
+  background: linear-gradient(to bottom, #121137, var(--bgColor), var(--bgColor), var(--bgColor));
+}
+.footer .logo {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.footer__socials {
+  display: flex;
+  justify-content: end;
+  gap: 1.75rem;
+}
+.footer__socials-item {
+  width: 60px;
+  height: 60px;
+}
+.footer__copy {
+  margin-top: 2rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  color: rgba(103, 204, 255, 0.45);
 }
