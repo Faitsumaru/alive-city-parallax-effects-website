@@ -138,13 +138,14 @@ section {
   width: 50%;
   z-index: 1003;
   background-color: var(--bgColor);
+  padding-bottom: 5rem;
 }
 .about__info-title {
   font-size: 2.5rem;
 }
 .about__info-text {
-  margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 2.5rem;
 }
 .about img {
   position: absolute;
@@ -157,6 +158,13 @@ section {
 .about img#waterfall {
   position: absolute;
   top: -95px;
+}
+.about img#desert-moon {
+  top: 400px;
+  mix-blend-mode: screen;
+}
+.about img#man {
+  object-fit: contain;
 }
 
 .products {
