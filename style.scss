@@ -15,9 +15,13 @@
     --textColor: #12f7ff;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: "Ojuju", sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     font-style: normal;
     background: var(--bgColor);
