@@ -1,0 +1,56 @@
+@media (max-width: 1200px) {
+  .about img#man {
+    bottom: -100px;
+  }
+
+  .products__info-btn {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .products__cards {
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+  .products__title {
+    margin-bottom: 3rem;
+  }
+
+  .about__info {
+    width: 100vw;
+  }
+
+  .footer__socials {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 900px) {
+  header {
+    align-items: start;
+  }
+  header .navlist {
+    display: block;
+  }
+  header .navlist li {
+    margin-top: 1.5rem;
+  }
+
+  .about__info {
+    left: 0;
+    padding: 1rem;
+  }
+
+  .footer {
+    text-align: center;
+  }
+  .footer .logo {
+    font-size: 3rem;
+  }
+  .footer__socials {
+    margin: 0 auto;
+    margin-top: 2rem;
+    max-width: 240px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
