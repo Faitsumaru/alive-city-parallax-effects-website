@@ -278,9 +278,9 @@ section {
         &-item {
             width: 60px;
             height: 60px;
-            transition: all .4s ease;
+            transition: all .5s ease;
             &:hover {
-                transform: translateY(-5px);
+                transform: translateY(-5px) scale(1.1) !important;
                 filter: drop-shadow(0 0 .3rem var(--textColor))
             }
         }

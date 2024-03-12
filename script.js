@@ -48,7 +48,7 @@ window.onload = calcScrollValue
 document.addEventListener("DOMContentLoaded", (event) => {
 
     //header
-    gsap.from('.logo', { scale: 2, opacity: .1, y: 50, duration: 2 })
+    gsap.from('header > .logo', { scale: 2, opacity: .1, y: 50, duration: 2 })
 
     gsap.from('.navlist__item:nth-child(1)', { scale: 4,   opacity: .1, x: 200, y: -200, duration: 1 }, '.1')
     gsap.from('.navlist__item:nth-child(2)', { scale: 4, opacity: .1, x: 200, y: -200, duration: 1 }, '.5')
@@ -108,7 +108,7 @@ gsap.from('.products__title', {
 gsap.from('.products__cards-item', { 
     scrollTrigger: '.products',
     opacity: 0,
-    duration: 3.5,
+    duration: 3,
     scale: 1.3
 })
 
@@ -126,7 +126,7 @@ gsap.to('.products__cards-item div', {
             y: 0,
         },
     ],
-    duration: 3,
+    duration: 2,
     scale: 1,
     opacity: 1
 })
@@ -135,5 +135,27 @@ gsap.from('.products__cards-item img', {
     scrollTrigger: '.products',
     opacity: .5,
     scale: 2,
-    duration: 3
+    duration: 2
+})
+
+//footer
+gsap.from('.footer > .logo', { 
+    scrollTrigger: '.footer',
+    opacity: 0,
+    scale: .5,
+    duration: 5,
+})
+gsap.from('.footer__socials-item', { 
+    scrollTrigger: '.footer',
+    opacity: .5,
+    scale: .5,
+    duration: 3,
+    rotate: 360,
+    y: 30
+})
+gsap.from('.footer__copy', { 
+    scrollTrigger: '.footer',
+    opacity: 0,
+    scale: .5,
+    duration: 5,
 })
