@@ -44,7 +44,10 @@ let calcScrollValue = () => {
 window.onscroll = calcScrollValue
 window.onload = calcScrollValue
 
+
 document.addEventListener("DOMContentLoaded", (event) => {
+
+    //header
     gsap.from('.logo', { scale: 2, opacity: .1, y: 50, duration: 2 })
 
     gsap.from('.navlist__item:nth-child(1)', { scale: 4,   opacity: .1, x: 200, y: -200, duration: 1 }, '.1')
@@ -52,16 +55,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
     gsap.from('.navlist__item:nth-child(3)', { scale: 4, opacity: .1, x: 300, y: -250, duration: 1 }, '1')
     gsap.from('.navlist__item:nth-child(4)', { scale: 4, opacity: .1, x: 300, y: -250, duration: 1 }, '1.5')
 
+    //home
     gsap.from('#moon', { rotation: -50, opacity: .1, duration: 3})
 
     gsap.from('#train', { rotation: -1.5, duration: 3})
 
 })
 
-
-
+//about
 gsap.from('.about__info-title', { 
-    scrollTrigger: 'about',
+    scrollTrigger: '.about',
     rotation: -5, 
     duration: 3,
     y: 15,
@@ -69,7 +72,7 @@ gsap.from('.about__info-title', {
     scale: 1.25
 })
 gsap.from('.about__info-text', { 
-    scrollTrigger: 'about',
+    scrollTrigger: '.about',
     rotation: 5, 
     duration: 2,
     y: 50,
@@ -78,8 +81,59 @@ gsap.from('.about__info-text', {
     scale: 2
 })
 gsap.from('.about__info-btn', { 
-    scrollTrigger: 'about',
+    scrollTrigger: '.about',
     duration: 4,
     opacity: 0,
     delay: 1
+})
+
+//products
+gsap.from('.blur-layer', { 
+    scrollTrigger: '.products',
+    rotation: 10, 
+    duration: 5,
+    y: -100,
+    opacity: .1,
+    scale: 4
+})
+gsap.from('.products__title', { 
+    scrollTrigger: '.products',
+    rotation: -5, 
+    duration: 3,
+    y: 40,
+    opacity: 0,
+    scale: 1.5
+})
+
+gsap.from('.products__cards-item', { 
+    scrollTrigger: '.products',
+    opacity: 0,
+    duration: 3.5,
+    scale: 1.3
+})
+
+gsap.from('.products__cards-item div', { 
+    scrollTrigger: '.products',
+    y: 100,
+    duration: 2,
+    scale: 1.25,
+    opacity: 0
+})
+gsap.to('.products__cards-item div', { 
+    scrollTrigger: '.products__title',
+    keyframes: [
+        {
+            y: 0,
+        },
+    ],
+    duration: 3,
+    scale: 1,
+    opacity: 1
+})
+
+gsap.from('.products__cards-item img', { 
+    scrollTrigger: '.products',
+    opacity: .5,
+    scale: 2,
+    duration: 3
 })

@@ -208,7 +208,7 @@ section {
             z-index: 999;
 
             &:hover {
-                transform: translateY(-7px);
+                transform: translateY(-7px) !important;
                 cursor: pointer;
             }
 

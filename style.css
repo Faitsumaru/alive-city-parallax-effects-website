@@ -199,7 +199,7 @@ section {
   z-index: 999;
 }
 .products__cards-item:hover {
-  transform: translateY(-7px);
+  transform: translateY(-7px) !important;
   cursor: pointer;
 }
 .products__cards-item img {
