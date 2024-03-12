@@ -43,3 +43,17 @@ let calcScrollValue = () => {
 
 window.onscroll = calcScrollValue
 window.onload = calcScrollValue
+
+document.addEventListener("DOMContentLoaded", (event) => {
+    gsap.from('.logo', { scale: 2, opacity: .1, y: 50, duration: 2 })
+
+    gsap.from('.navlist__item:nth-child(1)', { scale: 4,   opacity: .1, x: 200, y: -200, duration: 1 }, '.1')
+    gsap.from('.navlist__item:nth-child(2)', { scale: 4, opacity: .1, x: 200, y: -200, duration: 1 }, '.5')
+    gsap.from('.navlist__item:nth-child(3)', { scale: 4, opacity: .1, x: 300, y: -250, duration: 1 }, '1')
+    gsap.from('.navlist__item:nth-child(4)', { scale: 4, opacity: .1, x: 300, y: -250, duration: 1 }, '1.5')
+
+    gsap.from('#moon', { rotation: -50, opacity: .1, duration: 3})
+
+    gsap.from('#train', { rotation: -1.5, duration: 3})
+
+})
