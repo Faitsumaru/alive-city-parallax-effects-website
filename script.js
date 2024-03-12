@@ -57,3 +57,29 @@ document.addEventListener("DOMContentLoaded", (event) => {
     gsap.from('#train', { rotation: -1.5, duration: 3})
 
 })
+
+
+
+gsap.from('.about__info-title', { 
+    scrollTrigger: 'about',
+    rotation: -5, 
+    duration: 3,
+    y: 15,
+    opacity: .1,
+    scale: 1.25
+})
+gsap.from('.about__info-text', { 
+    scrollTrigger: 'about',
+    rotation: 5, 
+    duration: 2,
+    y: 50,
+    opacity: 0,
+    delay: .5,
+    scale: 2
+})
+gsap.from('.about__info-btn', { 
+    scrollTrigger: 'about',
+    duration: 4,
+    opacity: 0,
+    delay: 1
+})
